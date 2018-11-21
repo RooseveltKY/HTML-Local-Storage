@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <h1>The Story</h1>
+    <h1 id= "nameOutput"></h1>
+    <h1 id= "adverbOutput"></h1>
+    <h1 id= "placeOutput"></h1>
+
+    <h2 id="total"></h2>
+    
+    <script>
+      var x= localStorage.getItem('addName');
+      document.getElementById('nameOutput').innerHTML= x;
+      
+      var y= localStorage.getItem('addAdverb');
+      console.log(y);
+      document.getElementById('adverbOutput').innerHTML= y;
+      
+      var z= localStorage.getItem('addPlace');
+      document.getElementById('placeOutput').innerHTML= z;
+
+
+
+      document.getElementById('total').innerHTML = "A person named " + x + " went to the " + z + " " + y;
+    </script>
+    
+  </body>
+</html>

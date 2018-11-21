@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <h1>Insert name</h1>
+      <input id= "nameInput" type= "text">
+    <h1>Insert adverb</h1>
+      <input id= "adverbInput" type= "text">
+    <h1>Insert place</h1>
+      <input id= "placeInput" type= "text">
+    <br>
+    <button onclick= "addLib()">Add Libs</button>
+
+    <script>
+      function addLib() {
+        var x= document.getElementById('nameInput').value;
+        localStorage.setItem("addName", x);
+        
+        var y= document.getElementById('adverbInput').value;
+        localStorage.setItem("addAdverb", y);
+        
+        var z= document.getElementById('placeInput').value;
+        localStorage.setItem("addPlace", z);
+        
+        location.href="addLib2.html";
+      }
+      
+    </script>
+  </body>
+</html>
